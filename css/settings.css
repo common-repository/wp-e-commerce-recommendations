@@ -1,0 +1,366 @@
+/* _mixins.scss */
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0; }
+
+#ntIFrameWrapper {
+  width: 480px; }
+  #ntIFrameWrapper.login #ntIFrameEl {
+    height: 670px; }
+  #ntIFrameWrapper.register #ntIFrameEl {
+    height: 888px; }
+
+#ntIFrameEl {
+  border: 1px solid #ddd;
+  width: 480px; }
+
+.nt_btn {
+  border: 1px solid #cccccc;
+  border-bottom: 1px solid #a5a097;
+  color: #444444;
+  display: inline-block;
+  font-size: 1em;
+  padding: .4em .6em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  -moz-box-shadow: 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  box-shadow: 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, white, #dddddd);
+  /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, white, #dddddd);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -moz-linear-gradient(top, white, #dddddd);
+  /* FF3.6+ */
+  background-image: -ms-linear-gradient(top, white, #dddddd);
+  /* IE10+ */
+  background-image: -o-linear-gradient(top, white, #dddddd);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, white, #dddddd);
+  /* W3C */
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em; }
+  .nt_btn:hover, .nt_btn:focus, .nt_btn:active {
+    background-color: #d9d9d9;
+    background-image: -webkit-gradient(linear, left top, left bottom, #fafafa, #d9d9d9);
+    /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #fafafa, #d9d9d9);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -moz-linear-gradient(top, #fafafa, #d9d9d9);
+    /* FF3.6+ */
+    background-image: -ms-linear-gradient(top, #fafafa, #d9d9d9);
+    /* IE10+ */
+    background-image: -o-linear-gradient(top, #fafafa, #d9d9d9);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(to bottom, #fafafa, #d9d9d9);
+    /* W3C */ }
+  .nt_btn.amber {
+    background-color: #ebae2d;
+    background-image: -webkit-gradient(linear, left top, left bottom, #ffea4d, #ebae2d);
+    /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #ffea4d, #ebae2d);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -moz-linear-gradient(top, #ffea4d, #ebae2d);
+    /* FF3.6+ */
+    background-image: -ms-linear-gradient(top, #ffea4d, #ebae2d);
+    /* IE10+ */
+    background-image: -o-linear-gradient(top, #ffea4d, #ebae2d);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(to bottom, #ffea4d, #ebae2d);
+    /* W3C */ }
+
+.nt_account,
+.nt_no_account {
+  width: 120px; }
+
+.nt_no_account {
+  margin-right: 10px; }
+
+.nt_explanation,
+.nt_settings_panel_wrapper {
+  float: left;
+  width: 400px; }
+
+.nt_settings_panel_wrapper {
+  position: relative;
+  width: 100%; }
+
+.nt_explanation {
+  margin: 0 20px 3em 0; }
+
+#nt_key_and_secret {
+  height: 80px;
+  margin: 1em 0;
+  width: 100%; }
+
+#ntIFrameWrapper {
+  left: 450px;
+  position: absolute;
+  top: 40px;
+  z-index: 1000; }
+
+#ntIFrameWrapper.login #ntIFrameEl,
+#ntIFrameWrapper.register #ntIFrameEl {
+  height: 550px; }
+
+#nt_confirmation_code_wrapper p {
+  display: none;
+  margin: 0; }
+#nt_confirmation_code_wrapper.nt_active {
+  background: #FFFEAD;
+  padding: 1em 1em 0 1em; }
+  #nt_confirmation_code_wrapper.nt_active #nt_confirmation_assist_text_1 {
+    display: block; }
+
+.nt_divider {
+  border: 0;
+  border-top: 1px solid #ccc; }
+
+.nt_explanation .row {
+  margin: .5em 0; }
+
+.nt_explanation .radio_btn {
+  float: left; }
+
+.nt_explanation label {
+  display: block;
+  padding-left: 25px; }
+
+.nt_settings_wrapper {
+  clear: both;
+  float: left;
+  padding-top: 20px;
+  position: relative;
+  width: 100%; }
+
+.nt_settings_panel {
+  float: left;
+  margin-right: 455px; }
+  .nt_settings_panel h2 {
+    margin-top: 0;
+    padding: 0; }
+  .nt_settings_panel h3 {
+    font-size: 1.4em;
+    margin-top: 0; }
+  .nt_settings_panel h4 {
+    font-size: 1.2em; }
+  .nt_settings_panel .nt_code {
+    background: #ddd;
+    display: inline-block;
+    font-family: "Courier New", Courier, monospace;
+    -ms-word-break: break-all;
+    word-wrap: break-all;
+    word-break: break-all;
+    /* webkit */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  .nt_settings_panel ul.nt_features {
+    list-style: disc;
+    padding: 0 2em 1em 2em; }
+  .nt_settings_panel .nt_console_img {
+    float: right;
+    margin: 1em 0 2em 2em; }
+  .nt_settings_panel .nt_btn.nt_i_understand {
+    padding: .7em 1.3em; }
+  .nt_settings_panel .nt_btn.nt_console_link {
+    display: block;
+    float: left;
+    font-size: 1.1em;
+    height: 17px;
+    margin-bottom: 20px;
+    padding: .7em;
+    width: 140px; }
+    .nt_settings_panel .nt_btn.nt_console_link .nt_svg_label {
+      margin-right: 10px; }
+    .nt_settings_panel .nt_btn.nt_console_link .nt_svg_wrap {
+      float: right;
+      margin-right: 5px; }
+
+.nt_chart_wrapper {
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 0 0 100px 25px;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 410px;
+  z-index: 10000; }
+  .nt_chart_wrapper h2 {
+    margin: 0 0 15px 0;
+    padding-top: 0; }
+  .nt_chart_wrapper .nt_wrapper {
+    margin-bottom: 20px; }
+
+.nt_settings_section {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.3em;
+  padding-bottom: 1.8em; }
+  .nt_settings_section h2 {
+    margin-top: 1em; }
+  .nt_settings_section h3 {
+    margin-top: 1em; }
+
+.nt_settings_table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%; }
+  .nt_settings_table thead {
+    font-weight: bold; }
+    .nt_settings_table thead th {
+      background: #eee;
+      border: 1px solid #ccc; }
+  .nt_settings_table td {
+    background: #fff;
+    border: 1px solid #ccc; }
+  .nt_settings_table ul {
+    margin: 0;
+    padding: 0; }
+
+#nt_delete_settings_wrapper {
+  display: none; }
+
+#nt_delete_settings_wrapper .nt_checkbox_wrapper {
+  background: #FFFEAD;
+  padding: 1em; }
+
+.nt_row {
+  margin-bottom: 10px; }
+  .nt_row label {
+    display: block;
+    margin-bottom: 5px; }
+
+#nt_delete_settings {
+  margin-right: .75em; }
+
+#nt_accordion.nt_collapsed {
+  padding-bottom: 1em; }
+
+#nt_accordion .nt_accordion_toggle a {
+  color: #000;
+  cursor: default;
+  text-decoration: none; }
+  #nt_accordion .nt_accordion_toggle a span {
+    display: none; }
+
+#nt_accordion.nt_collapsed .nt_accordion_container {
+  background: #F8F7F7;
+  border: 1px solid #ddd;
+  border-top: 0;
+  display: none;
+  margin: 0 1em;
+  padding: 1em;
+  -webkit-box-shadow: inset 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  -moz-box-shadow: inset 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  box-shadow: inset 0 1px 1px 0 rgba(177, 177, 177, 0.4); }
+
+#nt_accordion.nt_collapsed h4 {
+  border: 1px solid #ccc;
+  border-radius: .3em;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  -moz-box-shadow: 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  box-shadow: 0 1px 1px 0 rgba(177, 177, 177, 0.4);
+  background-color: #dddddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, white, #dddddd);
+  /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, white, #dddddd);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -moz-linear-gradient(top, white, #dddddd);
+  /* FF3.6+ */
+  background-image: -ms-linear-gradient(top, white, #dddddd);
+  /* IE10+ */
+  background-image: -o-linear-gradient(top, white, #dddddd);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, white, #dddddd);
+  /* W3C */
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em; }
+  #nt_accordion.nt_collapsed h4:hover, #nt_accordion.nt_collapsed h4:focus, #nt_accordion.nt_collapsed h4:active {
+    background-color: #d9d9d9;
+    background-image: -webkit-gradient(linear, left top, left bottom, #fafafa, #d9d9d9);
+    /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #fafafa, #d9d9d9);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -moz-linear-gradient(top, #fafafa, #d9d9d9);
+    /* FF3.6+ */
+    background-image: -ms-linear-gradient(top, #fafafa, #d9d9d9);
+    /* IE10+ */
+    background-image: -o-linear-gradient(top, #fafafa, #d9d9d9);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(to bottom, #fafafa, #d9d9d9);
+    /* W3C */ }
+
+#nt_accordion.nt_collapsed .nt_accordion_toggle a {
+  cursor: pointer;
+  display: block;
+  padding: .7em; }
+
+#nt_accordion.nt_collapsed .nt_accordion_toggle a span {
+  display: inline-block;
+  float: right;
+  margin: 0 0 .5em 1em;
+  -webkit-transition: all 0.3s ease-in-out 0;
+  -moz-transition: all 0.3s ease-in-out 0;
+  -ms-transition: all 0.3s ease-in-out 0;
+  -o-transition: all 0.3s ease-in-out 0;
+  transition: all 0.3s ease-in-out 0;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden; }
+
+#nt_accordion.nt_collapsed .nt_accordion_toggle a.nt_rotate_icon span {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.nt_warning {
+  background: #fc6;
+  margin: .5em 0;
+  padding: 1em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em; }
+  .nt_warning .nt_exclamation_mark {
+    float: right;
+    height: 80px;
+    margin: 0 0 1em 1em;
+    width: 80px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border-radius: 40px;
+    background-color: #cc0000;
+    background-image: -webkit-gradient(linear, left top, left bottom, red, #cc0000);
+    /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, red, #cc0000);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -moz-linear-gradient(top, red, #cc0000);
+    /* FF3.6+ */
+    background-image: -ms-linear-gradient(top, red, #cc0000);
+    /* IE10+ */
+    background-image: -o-linear-gradient(top, red, #cc0000);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(to bottom, red, #cc0000);
+    /* W3C */
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(150, 150, 150, 0.5);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(150, 150, 150, 0.5);
+    box-shadow: 1px 1px 3px 0 rgba(150, 150, 150, 0.5); }
+  .nt_warning h2:first-child {
+    margin-top: 0; }
+  .nt_warning p,
+  .nt_warning ol {
+    font-size: 1.2em; }
